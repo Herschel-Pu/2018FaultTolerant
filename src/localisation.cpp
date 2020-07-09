@@ -56,23 +56,23 @@ LocalRos::LocalRos()
 	
 	
 	//parameters initialization;	
-    k=0;
-    pose_mean[0] = 0;
-    pose_mean[1] = 0;
-    pose_mean[2] = 0;
-    vc = 0;  wc = 0;vr = 0; wr = 0; radius = 0.05; v=0;	w=0;
-    number_of_lines=0; flag_r=0 ;flag_l=0;
-    x_all[0] = 0;
-    y_all[0] = 0;
-    xd_all[0] = 0;
-    yd_all[0] = 0;   
-    vr_all[0] = 0;
-    wr_all[0] = 0;
-    xe_all[0] = 0;
-    ye_all[0] = 0;
-    theta_e_all[0] = 0;
-    s1_all[0] = 0;
-    s2_all[0] = 0;
+    	k=0;
+    	pose_mean[0] = 0;
+    	pose_mean[1] = 0;
+    	pose_mean[2] = 0;
+    	vc = 0;  wc = 0; vr = 0; wr = 0; radius = 0.05; v=0; w=0;
+    	number_of_lines=0; flag_r=0 ;flag_l=0;
+    	x_all[0] = 0;
+    	y_all[0] = 0;
+    	xd_all[0] = 0;
+    	yd_all[0] = 0;   
+    	vr_all[0] = 0;
+    	wr_all[0] = 0;
+    	xe_all[0] = 0;
+    	ye_all[0] = 0;
+    	theta_e_all[0] = 0;
+    	s1_all[0] = 0;
+    	s2_all[0] = 0;
 	trajectory[0][0]=0;
 	w_sens_wl=0; w_sens_wr=0; w_cal_wl=0; w_cal_wr=0;w_l=0;w_r=0;
 	x_d=0; y_d=0; theta_d=0; v_d=0; w_d=0; v_d_dot=0; w_d_dot=0;
@@ -194,15 +194,15 @@ void LocalRos::Run()
 		vc=vc+dt*vc_dot;
 		wc=wc+dt*wc_dot;
 	
-		x_all[k] = x;
-		y_all[k] = y;
+		x_all[k]  = x;
+		y_all[k]  = y;
 		xd_all[k] = x_d;
 		yd_all[k] = y_d;
 		vr_all[k] =  vr;
 		wr_all[k] =  wr;
-		xe_all[k]=xe;
-		ye_all[k]=ye;
-		theta_e_all[k]=theta_e;
+		xe_all[k] = xe;
+		ye_all[k] = ye;
+		theta_e_all[k] = theta_e;
 		s1_all[k] = s1;
 		s2_all[k] = s2;
 
