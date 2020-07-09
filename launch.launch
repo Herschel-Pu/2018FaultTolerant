@@ -1,0 +1,12 @@
+<launch> 
+	<node name="feedback" pkg="feedback" type="feedback"/>	
+<!--	<node name="pids" pkg="feedback" type="pids"/>  -->
+	<node name="localisation" pkg="feedback" type="localisation"/>
+<!--	<node pkg="rosserial_python" type="serial_node.py" name="serial_node">-->
+<!--		<param name="port" type="string"  value="/dev/ttyACM0"/>-->
+<!--		<param name="baud" type="int"     value="57600"/>-->
+<!--	</node>-->
+	<node name="2motor" pkg="feedback" type="2motor"/>
+	<node name="pid_motor_ctl" pkg="pid_motor_ctl" type="pid_motor_ctl"/>
+
+</launch>
